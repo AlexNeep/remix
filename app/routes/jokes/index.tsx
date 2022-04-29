@@ -1,5 +1,5 @@
 import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import type { LoaderFunction } from "@remix-run/node";
 
 import { db } from "~/utils/db.server";
@@ -25,6 +25,7 @@ export default function JokesIndexRoute() {
       <h1>Here's a random joke</h1>
       <h2>{data.joke.name}</h2>
       <p>{data.joke.content}</p>
+      <Link to={data.joke.id}>"{data.joke.name}" Permalink</Link>
     </div>
   );
 }
