@@ -51,3 +51,7 @@ rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
 ```
+
+## prisma
+
+Run seed `node --require esbuild-register prisma/seed.ts`

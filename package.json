@@ -4,8 +4,8 @@
   "description": "",
   "license": "",
   "sideEffects": false,
-  "prisma":{
-    "seed":"node --require esbuild-register prisma/seed.ts"
+  "prisma": {
+    "seed": "node --require esbuild-register prisma/seed.ts"
   },
   "scripts": {
     "build": "remix build",
